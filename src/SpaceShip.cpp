@@ -50,6 +50,36 @@ void SpaceShip::setOrientation(glm::vec2 orientation)
 	m_orientation = orientation;
 }
 
+void SpaceShip::setAccelerationRate(float acceleration)
+{
+	m_accelerationRate = acceleration;
+}
+
+void SpaceShip::setTurnRate(float rate)
+{
+	m_turnRate = rate;
+}
+
+glm::vec2 SpaceShip::getOrientation()
+{
+	return m_orientation;
+}
+
+float SpaceShip::getAccelerationRate()
+{
+	return m_accelerationRate;
+}
+
+float SpaceShip::getRotationAngle()
+{
+	return m_rotationAngle;
+}
+
+float SpaceShip::getTurnRate()
+{
+	return m_turnRate;
+}
+
 void SpaceShip::setRotationAngle(float angle)
 {
 	m_rotationAngle = angle;
